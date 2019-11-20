@@ -1,0 +1,333 @@
+2019-10-20 17:05:44.721  INFO 10668 --- [main] c.l.s.SpringbootRabbitmqLearnApplication : Starting SpringbootRabbitmqLearnApplication on 20180920-194445 with PID 10668 (F:\springboot-rabbitmq\springboot-rabbitmq-learn\target\classes started by Administrator in F:\springboot-rabbitmq\springboot-rabbitmq-learn)
+2019-10-20 17:05:44.726  INFO 10668 --- [main] c.l.s.SpringbootRabbitmqLearnApplication : No active profile set, falling back to default profiles: default
+2019-10-20 17:05:45.598  WARN 10668 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.learn.springbootrabbitmqlearn]' package. Please check your configuration.
+2019-10-20 17:05:45.973  INFO 10668 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9092 (http)
+2019-10-20 17:05:45.982  INFO 10668 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-20 17:05:45.983  INFO 10668 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-10-20 17:05:46.053  INFO 10668 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-20 17:05:46.053  INFO 10668 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1249 ms
+2019-10-20 17:05:46.210  INFO 10668 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-20 17:05:46.335  WARN 10668 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2019-10-20 17:05:46.335  INFO 10668 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-20 17:05:46.338  INFO 10668 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-10-20 17:05:46.351  INFO 10668 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-10-20 17:05:46.357 ERROR 10668 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2019-10-20 17:07:09.499  INFO 10608 --- [main] c.l.s.SpringbootRabbitmqLearnApplication : Starting SpringbootRabbitmqLearnApplication on 20180920-194445 with PID 10608 (F:\springboot-rabbitmq\springboot-rabbitmq-learn\target\classes started by Administrator in F:\springboot-rabbitmq\springboot-rabbitmq-learn)
+2019-10-20 17:07:09.503  INFO 10608 --- [main] c.l.s.SpringbootRabbitmqLearnApplication : No active profile set, falling back to default profiles: default
+2019-10-20 17:07:10.413  WARN 10608 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.learn.springbootrabbitmqlearn]' package. Please check your configuration.
+2019-10-20 17:07:10.790  INFO 10608 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9092 (http)
+2019-10-20 17:07:10.800  INFO 10608 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-20 17:07:10.801  INFO 10608 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-10-20 17:07:10.873  INFO 10608 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-20 17:07:10.873  INFO 10608 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1288 ms
+2019-10-20 17:07:11.032  INFO 10608 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-20 17:07:11.392  WARN 10608 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse config resource: class path resource [mybatis-config.xml]; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.github.pagehelper.PageHelper'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.github.pagehelper.PageHelper
+2019-10-20 17:07:11.393  INFO 10608 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-20 17:07:11.396  INFO 10608 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-10-20 17:07:11.407  INFO 10608 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-10-20 17:07:11.416 ERROR 10608 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse config resource: class path resource [mybatis-config.xml]; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.github.pagehelper.PageHelper'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.github.pagehelper.PageHelper
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:645) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:625) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878) ~[spring-context-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) [spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at com.learn.springbootrabbitmqlearn.SpringbootRabbitmqLearnApplication.main(SpringbootRabbitmqLearnApplication.java:10) [classes/:na]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse config resource: class path resource [mybatis-config.xml]; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.github.pagehelper.PageHelper'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.github.pagehelper.PageHelper
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:640) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	... 19 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse config resource: class path resource [mybatis-config.xml]; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.github.pagehelper.PageHelper'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.github.pagehelper.PageHelper
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:573) ~[mybatis-spring-2.0.2.jar:2.0.2]
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:475) ~[mybatis-spring-2.0.2.jar:2.0.2]
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:616) ~[mybatis-spring-2.0.2.jar:2.0.2]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:180) ~[mybatis-spring-boot-autoconfigure-2.1.0.jar:2.1.0]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$15e3353f.CGLIB$sqlSessionFactory$1(<generated>) ~[mybatis-spring-boot-autoconfigure-2.1.0.jar:2.1.0]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$15e3353f$$FastClassBySpringCGLIB$$53ef3335.invoke(<generated>) ~[mybatis-spring-boot-autoconfigure-2.1.0.jar:2.1.0]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363) ~[spring-context-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$15e3353f.sqlSessionFactory(<generated>) ~[mybatis-spring-boot-autoconfigure-2.1.0.jar:2.1.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_181]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	... 20 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.github.pagehelper.PageHelper'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.github.pagehelper.PageHelper
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:121) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:98) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:570) ~[mybatis-spring-2.0.2.jar:2.0.2]
+	... 33 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.github.pagehelper.PageHelper'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.github.pagehelper.PageHelper
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.pluginElement(XMLConfigBuilder.java:188) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:110) ~[mybatis-3.5.2.jar:3.5.2]
+	... 35 common frames omitted
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.github.pagehelper.PageHelper'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.github.pagehelper.PageHelper
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:120) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116) ~[mybatis-3.5.2.jar:3.5.2]
+	... 37 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Cannot find class: com.github.pagehelper.PageHelper
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:200) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116) ~[mybatis-3.5.2.jar:3.5.2]
+	... 39 common frames omitted
+
+2019-10-20 17:10:29.519  INFO 1312 --- [main] c.l.s.SpringbootRabbitmqLearnApplication : Starting SpringbootRabbitmqLearnApplication on 20180920-194445 with PID 1312 (F:\springboot-rabbitmq\springboot-rabbitmq-learn\target\classes started by Administrator in F:\springboot-rabbitmq\springboot-rabbitmq-learn)
+2019-10-20 17:10:29.523  INFO 1312 --- [main] c.l.s.SpringbootRabbitmqLearnApplication : No active profile set, falling back to default profiles: default
+2019-10-20 17:10:30.467  WARN 1312 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.learn.springbootrabbitmqlearn]' package. Please check your configuration.
+2019-10-20 17:10:30.841  INFO 1312 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9092 (http)
+2019-10-20 17:10:30.849  INFO 1312 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-20 17:10:30.850  INFO 1312 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-10-20 17:10:30.924  INFO 1312 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-20 17:10:30.925  INFO 1312 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1337 ms
+2019-10-20 17:10:31.105  INFO 1312 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-20 17:10:31.240 ERROR 1312 --- [main] com.zaxxer.hikari.HikariConfig           : Failed to load driver class com.mysql.cj.jdbc.Driver from HikariConfig class classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+2019-10-20 17:10:31.243  WARN 1312 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under '' to com.zaxxer.hikari.HikariDataSource
+2019-10-20 17:10:31.244  INFO 1312 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-20 17:10:31.247  INFO 1312 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-10-20 17:10:31.259  WARN 1312 --- [main] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)
+2019-10-20 17:10:31.268  INFO 1312 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-10-20 17:10:31.273 ERROR 1312 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under '' to com.zaxxer.hikari.HikariDataSource:
+
+    Property: driverclassname
+    Value: com.mysql.cj.jdbc.Driver
+    Origin: "driverClassName" from property source "source"
+    Reason: Failed to load driver class com.mysql.cj.jdbc.Driver in either of HikariConfig class loader or Thread context classloader
+
+Action:
+
+Update your application's configuration
+
+2019-10-20 17:10:58.899  INFO 10896 --- [main] c.l.s.SpringbootRabbitmqLearnApplication : Starting SpringbootRabbitmqLearnApplication on 20180920-194445 with PID 10896 (F:\springboot-rabbitmq\springboot-rabbitmq-learn\target\classes started by Administrator in F:\springboot-rabbitmq\springboot-rabbitmq-learn)
+2019-10-20 17:10:58.904  INFO 10896 --- [main] c.l.s.SpringbootRabbitmqLearnApplication : No active profile set, falling back to default profiles: default
+2019-10-20 17:10:59.833  WARN 10896 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.learn.springbootrabbitmqlearn]' package. Please check your configuration.
+2019-10-20 17:11:00.203  INFO 10896 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9092 (http)
+2019-10-20 17:11:00.211  INFO 10896 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-20 17:11:00.212  INFO 10896 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-10-20 17:11:00.283  INFO 10896 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-20 17:11:00.283  INFO 10896 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1282 ms
+2019-10-20 17:11:00.442  INFO 10896 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-20 17:11:00.548  WARN 10896 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2019-10-20 17:11:00.549  INFO 10896 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-20 17:11:00.552  INFO 10896 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-10-20 17:11:00.564  WARN 10896 --- [main] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)
+2019-10-20 17:11:00.572  INFO 10896 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-10-20 17:11:00.578 ERROR 10896 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2019-10-20 17:12:19.515  INFO 10700 --- [main] c.l.s.SpringbootRabbitmqLearnApplication : Starting SpringbootRabbitmqLearnApplication on 20180920-194445 with PID 10700 (F:\springboot-rabbitmq\springboot-rabbitmq-learn\target\classes started by Administrator in F:\springboot-rabbitmq\springboot-rabbitmq-learn)
+2019-10-20 17:12:19.520  INFO 10700 --- [main] c.l.s.SpringbootRabbitmqLearnApplication : No active profile set, falling back to default profiles: default
+2019-10-20 17:12:20.337  WARN 10700 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.learn.springbootrabbitmqlearn]' package. Please check your configuration.
+2019-10-20 17:12:20.712  INFO 10700 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9092 (http)
+2019-10-20 17:12:20.721  INFO 10700 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-20 17:12:20.722  INFO 10700 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-10-20 17:12:20.794  INFO 10700 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-20 17:12:20.794  INFO 10700 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1186 ms
+2019-10-20 17:12:20.951  INFO 10700 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-20 17:12:21.062  WARN 10700 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+2019-10-20 17:12:21.063  INFO 10700 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-20 17:12:21.066  INFO 10700 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-10-20 17:12:21.078  WARN 10700 --- [main] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)
+2019-10-20 17:12:21.086  INFO 10700 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-10-20 17:12:21.095 ERROR 10700 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:645) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:625) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878) ~[spring-context-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) [spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at com.learn.springbootrabbitmqlearn.SpringbootRabbitmqLearnApplication.main(SpringbootRabbitmqLearnApplication.java:10) [classes/:na]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:640) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	... 19 common frames omitted
+Caused by: java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.util.Assert.state(Assert.java:94) ~[spring-core-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.determineDriverClassName(DataSourceProperties.java:222) ~[spring-boot-autoconfigure-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.initializeDataSourceBuilder(DataSourceProperties.java:174) ~[spring-boot-autoconfigure-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration.createDataSource(DataSourceConfiguration.java:43) ~[spring-boot-autoconfigure-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari.dataSource(DataSourceConfiguration.java:85) ~[spring-boot-autoconfigure-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_181]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	... 20 common frames omitted
+
+2019-10-20 17:16:29.292  INFO 6116 --- [main] c.l.s.SpringbootRabbitmqLearnApplication : Starting SpringbootRabbitmqLearnApplication on 20180920-194445 with PID 6116 (F:\springboot-rabbitmq\springboot-rabbitmq-learn\target\classes started by Administrator in F:\springboot-rabbitmq\springboot-rabbitmq-learn)
+2019-10-20 17:16:29.296  INFO 6116 --- [main] c.l.s.SpringbootRabbitmqLearnApplication : No active profile set, falling back to default profiles: default
+2019-10-20 17:16:30.374  WARN 6116 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.debug.steadyjack.mapper]' package. Please check your configuration.
+2019-10-20 17:16:30.918  INFO 6116 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9092 (http)
+2019-10-20 17:16:30.928  INFO 6116 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-20 17:16:30.928  INFO 6116 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-10-20 17:16:31.030  INFO 6116 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-20 17:16:31.030  INFO 6116 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1621 ms
+2019-10-20 17:16:31.100  WARN 6116 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'helloWorldController': Unsatisfied dependency expressed through field 'orderRecordMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.learn.springbootrabbitmqlearn.mapper.OrderRecordMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-10-20 17:16:31.104  INFO 6116 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-10-20 17:16:31.119  WARN 6116 --- [main] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)
+2019-10-20 17:16:31.133  INFO 6116 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-10-20 17:16:31.390 ERROR 6116 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field orderRecordMapper in com.learn.springbootrabbitmqlearn.controller.HelloWorldController required a bean of type 'com.learn.springbootrabbitmqlearn.mapper.OrderRecordMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.learn.springbootrabbitmqlearn.mapper.OrderRecordMapper' in your configuration.
+
+2019-10-20 17:17:28.122  INFO 10152 --- [main] c.l.s.SpringbootRabbitmqLearnApplication : Starting SpringbootRabbitmqLearnApplication on 20180920-194445 with PID 10152 (F:\springboot-rabbitmq\springboot-rabbitmq-learn\target\classes started by Administrator in F:\springboot-rabbitmq\springboot-rabbitmq-learn)
+2019-10-20 17:17:28.126  INFO 10152 --- [main] c.l.s.SpringbootRabbitmqLearnApplication : No active profile set, falling back to default profiles: default
+2019-10-20 17:17:29.261  WARN 10152 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.debug.steadyjack.mapper]' package. Please check your configuration.
+2019-10-20 17:17:29.665  INFO 10152 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9092 (http)
+2019-10-20 17:17:29.673  INFO 10152 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-20 17:17:29.673  INFO 10152 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-10-20 17:17:29.750  INFO 10152 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-20 17:17:29.750  INFO 10152 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1517 ms
+2019-10-20 17:17:29.808  WARN 10152 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'helloWorldController': Unsatisfied dependency expressed through field 'orderRecordMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.learn.springbootrabbitmqlearn.mapper.OrderRecordMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-10-20 17:17:29.810  INFO 10152 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-10-20 17:17:29.821  WARN 10152 --- [main] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)
+2019-10-20 17:17:29.828  INFO 10152 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-10-20 17:17:29.911 ERROR 10152 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field orderRecordMapper in com.learn.springbootrabbitmqlearn.controller.HelloWorldController required a bean of type 'com.learn.springbootrabbitmqlearn.mapper.OrderRecordMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.learn.springbootrabbitmqlearn.mapper.OrderRecordMapper' in your configuration.
+
+2019-10-20 17:18:06.385  INFO 7760 --- [main] c.l.s.SpringbootRabbitmqLearnApplication : Starting SpringbootRabbitmqLearnApplication on 20180920-194445 with PID 7760 (F:\springboot-rabbitmq\springboot-rabbitmq-learn\target\classes started by Administrator in F:\springboot-rabbitmq\springboot-rabbitmq-learn)
+2019-10-20 17:18:06.389  INFO 7760 --- [main] c.l.s.SpringbootRabbitmqLearnApplication : No active profile set, falling back to default profiles: default
+2019-10-20 17:18:07.861  INFO 7760 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9092 (http)
+2019-10-20 17:18:07.871  INFO 7760 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-20 17:18:07.871  INFO 7760 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-10-20 17:18:07.945  INFO 7760 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-20 17:18:07.946  INFO 7760 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1435 ms
+2019-10-20 17:18:09.047  INFO 7760 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-20 17:18:09.625  INFO 7760 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9092 (http) with context path ''
+2019-10-20 17:18:09.628  INFO 7760 --- [main] c.l.s.SpringbootRabbitmqLearnApplication : Started SpringbootRabbitmqLearnApplication in 3.782 seconds (JVM running for 4.66)
+2019-10-20 17:19:40.889  INFO 7760 --- [http-nio-9092-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-20 17:19:40.890  INFO 7760 --- [http-nio-9092-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-20 17:19:40.899  INFO 7760 --- [http-nio-9092-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms

@@ -1,0 +1,3 @@
+1、大局上来讲：拿到下单记录数据->异步监听消费处理记录数据->塞入到数据库
+2、spring的事件驱动模型三大组件：ApplicationEvent，ApplicationListener，ApplicationEventPublisher
+3、“event绑定到一个listener”->一个event可以被绑定到多个listener
